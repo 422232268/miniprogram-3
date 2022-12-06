@@ -1,0 +1,7 @@
+<view class="wx-popup" hidden="{{flag}}" bindtap='_success'>
+  <view class='popup-container'>
+    <view class="wx-popup-title">{{viewArray.text}}</view>
+    <Menu data="{{viewArray.children}}" bind:selected="selected" color='#f1f1f1'>
+    </Menu>
+  </view>
+</view>

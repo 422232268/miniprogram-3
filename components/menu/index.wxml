@@ -1,0 +1,18 @@
+<!--components/menu/index.wxml-->
+<view class="menu-container">
+  <view wx:for="{{viewArray}}" wx:key="*this" class="menu-element" data-index="{{index}}"  bindtap='selected' style="background-color: {{color}};">
+    <view class="menu-icon-container" style="background-color: {{item.color}};">
+      <view wx:if="{{!item.children}}" style="font-size: 1.7rem;" class="iconfont icon-{{item.iconName}} menu-icon">
+      </view>
+      <view wx:if="{{item.children}}" class="menu-icon-container-more">
+        <view wx:for="{{item.showChildren}}" wx:key="*this" class="menu-element-more" style="background-color: {{item.color}};">
+          <view style="font-size: 1rem;" class="iconfont icon-{{item.iconName}} menu-icon-more">
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="menu-text">
+      {{item.text}}
+    </view>
+  </view>
+</view>

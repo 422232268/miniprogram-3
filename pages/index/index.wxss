@@ -1,0 +1,86 @@
+/* pages/5.wxss */
+.home-container {
+  background: #f1f1f1;
+  height: 100%;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 5rem);
+  padding-bottom: calc(constant(safe-area-inset-bottom) + 5rem);
+}
+
+.blessing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #82c213;
+  height: 2.8rem;
+  width: 750rpx;
+  font-size: 1rem;
+  background-color: #262b3a;
+}
+
+.blessing-sentence {
+  flex: 1;
+  text-align: right;
+}
+
+.blessing-info {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 0 .7rem;
+  line-height: 3rem
+}
+
+swiper {
+  height: 7.6rem;
+}
+
+.slide-image {
+  width: 100%;
+  height: 7.6rem;
+}
+
+/* 修改dot形状 */
+.wx-swiper-dots .wx-swiper-dot {
+  width: 10rpx;
+  /*宽*/
+  height: 10rpx;
+  /*高*/
+  border: 1rpx solid #82c213;
+  /*圆角*/
+  background-color: rgba(255, 255, 255, 0.0);
+}
+
+.funtion-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #262b3a;
+  color: #82c213;
+  height: 3.45rem;
+  padding: 0 0.6rem;
+}
+
+.funtion-element {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  text-align: center;
+}
+
+.funtion-icon {
+  position: relative;
+  color: lightgreen;
+}
+
+.funtion-text {
+  font-size: .53rem;
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+  color: #98989b;
+}
+.size{
+    width: 5rem;
+    height: 5rem;
+}

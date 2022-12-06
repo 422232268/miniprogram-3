@@ -1,0 +1,59 @@
+<!--pages/5.wxml-->
+<view class="home-container">
+  <!-- 祝福语 -->
+  <view class="blessing-container">
+    <view class="blessing-sentence">
+      早上好!
+    </view>
+    <view class="blessing-info">
+      <view class="blessing-name">
+        张三先生
+      </view>
+      <view class="blessing-tip">
+        <view class="weui-cell__hd badge-position-far" aria-hidden="true">
+          <view style="font-size: 1.5rem;" class="iconfont icon-lingdang">
+          </view>
+          <text id="b1_n1" class="weui-badge badge-position-sub" aria-label="，8个新通知">8</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 轮播图 -->
+  <view class="page-section page-section-spacing swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#82c213">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- funtion -->
+  <view class="funtion-container">
+    <view wx:for="{{funtionArray}}" wx:key="*this" class="funtion-element">
+      <view style="font-size: 1.5rem;" class="iconfont icon-{{item.iconName}} funtion-icon">
+      </view>
+      <view class="funtion-text">
+        {{item.text}}
+      </view>
+    </view>
+  </view>
+  <view style="margin-top: 0.4rem;">
+    <Menu
+    data="{{viewArray}}"
+    bind:selected="selected"
+  >
+  </Menu>
+  </view>
+  <Dialog 
+      id='popup'
+      title='小组件'
+      content='学会了吗'
+      btn_no='没有'
+      btn_ok='学会了'
+      bind:error="_error"
+      bind:success="_success"
+      data="{{viewArray}}"
+  ></Dialog>
+  <view class="size"></view>
+</view>

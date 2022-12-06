@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "Dialog": "/components/dialog/index",
+        "Menu":"/components/menu/index"
+    }
+}

@@ -1,0 +1,96 @@
+@import "/public/style/icon.wxss";
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: space-around;
+    color: #82c213;
+    padding-left: 1px;
+    flex-wrap: wrap;
+  }
+  
+  .menu-element {
+    margin-right: 1px;
+    width: calc((100% - 4px) / 4);
+    height: 5.4rem;
+    margin-bottom: 1px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
+    position: relative;
+  }
+  
+  .menu-icon-container {
+    width: 2.8rem;
+    height: 2.8rem;
+    display: inline-grid;
+    margin-top: .6rem;
+    border-radius: 40%;
+  }
+  
+  .menu-icon {
+    position: relative;
+    /* top: -0.85rem; */
+    color: lightyellow;
+  }
+  
+  .menu-text {
+    font-size: .6rem;
+    position: absolute;
+    top: 3.9rem;
+    width: 100%;
+    color: #98989b;
+  }
+  
+  .menu-icon-container-more {
+    display: flex;
+    width: 2.8rem;
+    height: 2.8rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: space-around;
+    color: #82c213;
+    padding-left: 1px;
+    flex-wrap: wrap;
+    left: 1.04rem;
+  }
+  
+  .menu-element-more {
+    margin-right: 1px;
+    width: calc((100% - 2px) / 2);
+    height: calc((100% - 2px) / 2);
+    margin-bottom: 1px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .menu-icon-more{
+    position: relative;
+    top: -.1rem;
+    color: aqua;
+  }
+  .menu-element-more:nth-child(1) {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  
+  .menu-element-more:nth-child(2) {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  
+  .menu-element-more:nth-child(3) {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  
+  .menu-element-more:nth-child(4) {
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  

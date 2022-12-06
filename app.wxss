@@ -1,0 +1,18 @@
+/**app.wxss**/
+@import "public/style/weui.wxss";
+@import "public/style/icon.wxss";
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.badge-position-far {
+    position: relative;
+}
+.badge-position-sub {
+    position: absolute;
+    top: 0.5em;
+    right: -0.4em;
+}
